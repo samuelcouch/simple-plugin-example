@@ -3,16 +3,42 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Static Plugin</title>
+        <title>Static Plugin Sample</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/public/css/styles.css">
     </head>
-    <body style="font-family: Arial, sans-serif; padding: 40px; text-align: center;">
-        <h1>Hello World!</h1>
-        <p>This is the static plugin (no authentication required)</p>
-        
-        <br><br>
-        
-        <a href="/auth" style="background: #007bff; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px;">
-            Try Authenticated Plugin
-        </a>
+    <body>
+        <div class="card-face-view">
+            <div class="card-face-container">
+                <p>
+                    Hello World!
+                </p>
+                <div class="card-face-info">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+                        <path d="M32 0c-17.2 0-31.2 14-31.2 31.2s14 31.2 31.2 31.2 30.8-13.6 30.8-31.2c0-17.2-13.6-31.2-30.8-31.2zM32 54.4c-12.8 0-22.8-10.4-22.8-22.8 0-12.8 10.4-22.8 22.8-22.8s22.8 10.4 22.8 22.8c0 12.8-10 22.8-22.8 22.8z"></path>
+                        <path d="M32 14.4c-9.6 0-17.2 7.6-17.2 17.2s7.6 17.2 17.2 17.2 17.2-7.6 17.2-17.2c0-9.6-7.6-17.2-17.2-17.2zM32 40.8c-5.2 0-9.2-4-9.2-9.2s4-9.2 9.2-9.2 9.2 4 9.2 9.2c0 5.2-4 9.2-9.2 9.2z"></path>
+                    </svg>
+                    <div>This is the <strong>static plugin</strong> (no authentication required)</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="expanded-view">
+            <h1>Hello World!</h1>
+            <div class="expanded-info">
+                <p>
+                    This is the <strong>static plugin</strong> that demonstrates basic functionality without any authentication required.
+                </p>
+                <p>
+                    Ready to see the authenticated experience? Try the dynamic plugin that requires user authentication
+                    and displays personalized account information.
+                </p>
+                <p style="margin-top: 2rem;">
+                    <a href="/auth" style="background: #007759; color: white; padding: 12px 24px; text-decoration: none; border-radius: 4px; display: inline-block; font-weight: bold;">
+                        Try Authenticated Plugin →
+                    </a>
+                </p>
+            </div>
+        </div>
     </body>
 </html>
