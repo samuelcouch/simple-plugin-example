@@ -49,7 +49,6 @@ Once running, you can test both plugin experiences:
 - **Static Plugin**: Visit `http://localhost:8080/static`
   - Loads immediately without authentication
   - Shows basic plugin functionality
-  - Includes a link to try the authenticated version
 
 - **Authenticated Plugin**: Visit `http://localhost:8080/auth`
   - Redirects through OAuth flow for user login
@@ -68,4 +67,4 @@ Once running, you can test both plugin experiences:
    - `http://localhost:8080/auth/callback` (for OAuth callback)
    - `http://localhost:8080/static` (optional, for static plugin)
 
-**Common Issue**: If you get "Auth error: Missing code or state", check that `/auth` is your primary redirect URI, not `/auth/callback`.
+**Common Issue**: If you get "Auth error: Missing code or state", check that `http://localhost:8080/auth` is your primary redirect URI, not `http://localhost:8080/auth/callback`.
